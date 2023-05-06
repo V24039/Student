@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: StudentMS
+        uri: lb://StudentMS
+        predicates:
+          - Path=/student/**
+      - id: TeacherMS
+        uri: lb://TeacherMS
+        predicates:
+          - Path=/teacher/**
+
+server:
+  port: 9090
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:3333/eureka

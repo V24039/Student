@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-StudentApplication<Student>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.School.Student.StudentApplication",
+            "projectName": "Student",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=63840 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=Student"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-LoginApplication<Login>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.School.Login.LoginApplication",
+            "projectName": "Login",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TeacherApplication<Teacher>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.School.Teacher.TeacherApplication",
+            "projectName": "Teacher",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

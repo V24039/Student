@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: TeacherMS
+
+server:
+  port: 9090
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:3333/eureka

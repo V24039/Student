@@ -1,0 +1,30 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": "*.test.js",
+      "options": {
+        "semi": true
+      }
+    },
+    {
+      "files": ["*.html", "legacy/**/*.js"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ],
+  "importOrder": [
+    "react",
+    "react-dom",
+    "react-router-dom",
+    "@material-ui/core",
+    "@emotion/react",
+    "@emotion/styled",
+    "./components",
+    "./utils",
+    "./assets"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
